@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1kl-dV-IH5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="aidi" id="BYZ-38-t0r" customClass="ViewController" customModule="DenunciaCuidadana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Naw-cg-xOa"/>
+                    <connections>
+                        <segue destination="v2Z-Vp-cva" kind="show" identifier="goToRegister" id="hND-wD-gky"/>
+                        <segue destination="PuM-gb-5JK" kind="show" identifier="goToReport" id="quU-VB-DcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.0434782608697" y="137.94642857142856"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="auP-bY-7v2">
+            <objects>
+                <viewController id="MMf-UQ-V3o" customClass="ViewReportDescription" customModule="DenunciaCuidadana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXe-4u-9fp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="McH-jD-2JW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fQ5-sS-Zog"/>
+                    <navigationItem key="navigationItem" id="GK1-S9-eHE"/>
+                    <connections>
+                        <segue destination="Srl-ZV-2jg" kind="show" identifier="goToMap" id="PAd-yw-IMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Le5-v4-Ovs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3196" y="342"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="aog-BQ-TUS">
+            <objects>
+                <viewController id="Srl-ZV-2jg" customClass="ViewReportGPS" customModule="DenunciaCuidadana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GmZ-tZ-jF5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TUr-OZ-w4Z"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Wzy-Pf-sd9"/>
+                    <navigationItem key="navigationItem" id="cLz-0Y-boG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfe-jm-XOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4157" y="342"/>
+        </scene>
+        <!--Registro-->
+        <scene sceneID="NpR-kh-cO4">
+            <objects>
+                <viewController storyboardIdentifier="goToRegister" id="v2Z-Vp-cva" customClass="ViewRegister" customModule="DenunciaCuidadana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AEy-dV-Rgr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Avd-ZR-RGP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Registro" id="fA2-YK-dwM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZX-Qd-u1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="-378"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="yn2-6W-Hbg">
+            <objects>
+                <tableViewController id="kIS-ae-1Nz" customClass="ViewListOfReports" customModule="DenunciaCuidadana" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vIp-Mr-WiI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7wY-jM-FQw">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7wY-jM-FQw" id="NRz-kw-Rvd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kIS-ae-1Nz" id="S55-zg-tlb"/>
+                            <outlet property="delegate" destination="kIS-ae-1Nz" id="nTd-K8-J4G"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="ACe-oz-ePG"/>
+                    <navigationItem key="navigationItem" id="Yoe-nv-ZD5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0l-00-JZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2299" y="1047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hfe-9y-iA6">
+            <objects>
+                <navigationController storyboardIdentifier="aidi2" automaticallyAdjustsScrollViewInsets="NO" id="1kl-dV-IH5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fvx-6y-eed">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vOC-6a-ynK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gVK-Bj-3Db"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stt-XV-Efz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="138"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ugv-U5-698">
+            <objects>
+                <tabBarController id="PuM-gb-5JK" customClass="TabBarController" customModule="DenunciaCuidadana" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xiS-fQ-bQc"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u97-YN-efG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MMf-UQ-V3o" kind="relationship" relationship="viewControllers" id="AUc-L0-hPx"/>
+                        <segue destination="kIS-ae-1Nz" kind="relationship" relationship="viewControllers" id="ZfO-9A-XIy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sd-wg-kH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2299" y="342"/>
+        </scene>
+    </scenes>
+</document>
